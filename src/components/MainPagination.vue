@@ -4,6 +4,12 @@ const pages = ref(10)
 const activePage = ref(localStorage.getItem("currentPage"))
 activePage.value++
 activePage.value--
+console.log(activePage.value)
+if (activePage.value == 0)
+{
+  activePage.value++
+}
+console.log(activePage.value)
 
 
 const prevPage = () => 
